@@ -28,54 +28,55 @@
 		
 		<?php
 			//Setting up GPIO outputs
-			$setmode__ = shell_exec ("/usr/local/bin/gpio -g mode __ out" );
-			$setmode__ = shell_exec ("/usr/local/bin/gpio -g mode __ out" );
-			$setmode__ = shell_exec ("/usr/local/bin/gpio -g mode __ out" );
-			$setmode__ = shell_exec ("/usr/local/bin/gpio -g mode __ out" );
-			$setmode__ = shell_exec ("/usr/local/bin/gpio -g mode __ out" );
-			$setmode__ = shell_exec ("/usr/local/bin/gpio -g mode __ out" );
-			$setmode__ = shell_exec ("/usr/local/bin/gpio -g mode __ out" );
-			$setmode__ = shell_exec ("/usr/local/bin/gpio -g mode __ out" );
-			$setmode__ = shell_exec ("/usr/local/bin/gpio -g mode __ out" );
+			//consider making variables for GPIOs for easy changes
+			$setmode27 = shell_exec ("/usr/local/bin/gpio -g mode 27 out" );
+			$setmode17 = shell_exec ("/usr/local/bin/gpio -g mode 17 out" );
+			$setmode26 = shell_exec ("/usr/local/bin/gpio -g mode 26 out" );
+			$setmode18 = shell_exec ("/usr/local/bin/gpio -g mode 18 out" );
+			$setmode6 = shell_exec ("/usr/local/bin/gpio -g mode 6 out" );
+			$setmode5 = shell_exec ("/usr/local/bin/gpio -g mode 5 out" );
+			$setmode24 = shell_exec ("/usr/local/bin/gpio -g mode 24 out" );
+			$setmode20 = shell_exec ("/usr/local/bin/gpio -g mode 20 out" );
+			$setmode16 = shell_exec ("/usr/local/bin/gpio -g mode 16 out" );
 			//sets buttons to 1
 			if(isset($_POST[fwd])){
-				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write __ 1" );
+				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write 27 1" );
 			}
 			elseif(isset($_POST[fsfwd])){
-				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write __ 1" );
+				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write 17 1" );
 			}
 			elseif(isset($_POST[left])){
-				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write __ 1" );
+				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write 26 1" );
 			}
 			elseif(isset($_POST[right])){
-				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write __ 1" );
+				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write 18 1" );
 			}
 			elseif(isset($_POST[Sright])){
-				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write __ 1" );
+				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write 6 1" );
 			}
 			elseif(isset($_POST[Sleft])){
-				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write __ 1" );
+				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write 5 1" );
 			}
 			elseif(isset($_POST[rvs])){
-				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write __ 1" );
+				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write 24 1" );
 			}
 			elseif(isset($_POST[Rright])){
-				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write __ 1" );
+				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write 20 1" );
 			}
 			elseif(isset($_POST[Rleft])){
-				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write __ 1" );
+				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write 16 1" );
 			}
 			//clears GPIOs
 			elseif(isset($_POST[off])){
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write __ 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write __ 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write __ 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write __ 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write __ 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write __ 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write __ 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write __ 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write __ 0" );
+				$gpio_off = shell_exec("usr/local/bin/gpio -g write 27 0" );
+				$gpio_off = shell_exec("usr/local/bin/gpio -g write 17 0" );
+				$gpio_off = shell_exec("usr/local/bin/gpio -g write 26 0" );
+				$gpio_off = shell_exec("usr/local/bin/gpio -g write 18 0" );
+				$gpio_off = shell_exec("usr/local/bin/gpio -g write 6 0" );
+				$gpio_off = shell_exec("usr/local/bin/gpio -g write 5 0" );
+				$gpio_off = shell_exec("usr/local/bin/gpio -g write 24 0" );
+				$gpio_off = shell_exec("usr/local/bin/gpio -g write 20 0" );
+				$gpio_off = shell_exec("usr/local/bin/gpio -g write 16 0" );
 			}
 		?>
 	</main>
@@ -83,5 +84,7 @@
 </html>
 <!-- 
 	*look in to javascript buttons
-	*
+	*tinker with location of buttons 
+	*tinker with layout
+	*make variables or GPIO values for easy changes
 -->
