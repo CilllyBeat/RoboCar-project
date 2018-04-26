@@ -3,13 +3,13 @@
 <head>
 	<meta />
 	<title>Remote Control for Ultimo </title>
-	<link href="CSS/style_sheet.css" rel="stylesheet">
+	<link href="style_sheet.css" rel="stylesheet">
 </head>
 
 <body>
 	<header>
 	<div class="banner">
-		<h1>MEC INC BANNER?<h1>
+		<h1>MEC INC.<h1>
 	</div>
 	</header>
 	
@@ -81,15 +81,15 @@
 			}
 			//clears GPIOs
 			elseif(isset($_POST[off])){
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write $forward 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write $fast_forward 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write $turn_left 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write $turn_right 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write $strafe_right 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write $strafe_left 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write $reverse 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write $reverse_right 0" );
-				$gpio_off = shell_exec("usr/local/bin/gpio -g write $reverse_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $fast_forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_left 0" );
 			}
 		?>
 	</main>
