@@ -51,32 +51,122 @@
 			$setmode16 = shell_exec ("/usr/local/bin/gpio -g mode $reverse_left out" );
 			
 
-			//sets buttons to 1
+			//first sets all buttons to 0 before setting chosen button to 1
 			if(isset($_POST[fwd])){
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $fast_forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_left 0" );
+				
 				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write $forward 1" );
 			}
 			elseif(isset($_POST[fsfwd])){
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $fast_forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_left 0" );
+				
 				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write $fast_forward 1" );
 			}
 			elseif(isset($_POST[left])){
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $fast_forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_left 0" );
+				
 				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write $turn_left 1" );
 			}
 			elseif(isset($_POST[right])){
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $fast_forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_left 0" );
+				
 				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write $turn_right 1" );
 			}
 			elseif(isset($_POST[Sright])){
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $fast_forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_left 0" );
+				
 				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write $strafe_right 1" );
 			}
 			elseif(isset($_POST[Sleft])){
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $fast_forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_left 0" );
+				
 				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write $strafe_left 1" );
 			}
 			elseif(isset($_POST[rvs])){
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $fast_forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_left 0" );
+				
 				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write $reverse 1" );
 			}
 			elseif(isset($_POST[Rright])){
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $fast_forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_left 0" );
+				
 				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write $reverse_right 1" );
 			}
 			elseif(isset($_POST[Rleft])){
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $fast_forward 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $turn_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $strafe_left 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_right 0" );
+				$gpio_off = shell_exec("/usr/local/bin/gpio -g write $reverse_left 0" );
+				
 				$gpio_on = shell_exec ("/usr/local/bin/gpio -g write $reverse_left 1" );
 			}
 			//clears GPIOs
