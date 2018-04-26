@@ -8,21 +8,23 @@
 
 <body>
 	<header>
+	<div class="banner">
 		<h1>MEC INC BANNER?<h1>
+	</div>
 	</header>
 	
 	<main>
 		<form method="post" action ="remote_control.php">
-			<input type="submit" value="Strafe Left" name="Sleft">
-			<input type="submit" value="Fast Forward" name="fsfwd">
-			<input type="submit" value="Strafe Right" name="Sright"><br>
-			<input type="submit" value="Left" name="left">
-			<input type="submit" value="Forward" name="fwd">
-			<input type="submit" value="Right" name="right"><br>
-			<input type="submit" value="Reverse Left" name="Rleft">
-			<input type="submit" value="Reverse" name="rvs">
-			<input type="submit" value="Reverse Right" name="Rright"><br>
-			<input type="submit" value="Stop" name="off">
+			<input type="submit" value="Strafe Left" name="Sleft" class="button">
+			<input type="submit" value="Fast Forward" name="fsfwd" class="button">
+			<input type="submit" value="Strafe Right" name="Sright" class="button"><br>
+			<input type="submit" value="Left" name="left" class="button">
+			<input type="submit" value="Forward" name="fwd" class="button">
+			<input type="submit" value="Right" name="right" class="button"><br>
+			<input type="submit" value="Reverse Left" name="Rleft" class="button">
+			<input type="submit" value="Reverse" name="rvs" class="button">
+			<input type="submit" value="Reverse Right" name="Rright" class="button"><br>
+			<input type="submit" value="Stop" name="off" class="button">
 		</form>
 		
 		<?php

@@ -2,8 +2,8 @@ body{
 }
 
 main {
-	text-align: center; /*liner skrift op centreret, genovervej om en class skal laves per knap for bedre at "lege" med paddding/plads mellem knapper*/
-	line-height: 100px; /*space mellem rækkerne af knapper*/
+	text-align: center; /*liner skrift op centreret genovervej om en class skal laves per knap for bedre at "lege" med paddding/plads mellem knapper*/
+	line-height: 75px; /*space mellem rækkerne af knapper*/
 }
 
 header {
@@ -11,4 +11,19 @@ header {
 }
 
 h1 {
+}
+.button{ /*overvej individuelle button classes hvis knapperne skal have forskellige former*/
+	background-color: #4CAF50; /*baggrundsfarve grøn*/
+    border: none; /*ingen kant*/
+    color: white; /*skriftfarve*/
+    padding: 15px 32px; /*mængde 'padding' over/under + højre/venstre side i pixels*/
+    text-align: center;
+    text-decoration: none; /*ingen linjer over/under/igennem text*/
+    display: inline-block; /* hvordan objektet bliver vist (har ingen visuel funktion her, overvej at slette)*/
+    font-size: 16px; /*text størrelse i pixels*/
+    margin: 4px 2px; /*plads mellem/rundt om knapperne*/
+    cursor: pointer; /*gør musen til pegende hånd når den køres over knappen*/
+}
+.banner{
+	
 }
