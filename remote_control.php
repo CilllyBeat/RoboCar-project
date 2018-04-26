@@ -8,21 +8,20 @@
 
 <body>
 	<header>
-		<h1>INSERT MEC INC BANNER?<h1>
+		<h1>MEC INC BANNER?<h1>
 	</header>
 	
 	<main>
 		<form method="post" action ="remote_control.php">
-		#input buttons POSTING to php script
-			<input type="submit" value="Forward" name="fwd">
-			<input type="submit" value="Fast Forward" name="fsfwd">
-			<input type="submit" value="Left" name="left">
-			<input type="submit" value="Right" name="right">
-			<input type="submit" value="Strafe Right" name="Sright">
 			<input type="submit" value="Strafe Left" name="Sleft">
-			<input type="submit" value="Reverse" name="rvs">
-			<input type="submit" value="Reverse Right" name="Rright">
+			<input type="submit" value="Fast Forward" name="fsfwd">
+			<input type="submit" value="Strafe Right" name="Sright"><br>
+			<input type="submit" value="Left" name="left">
+			<input type="submit" value="Forward" name="fwd">
+			<input type="submit" value="Right" name="right"><br>
 			<input type="submit" value="Reverse Left" name="Rleft">
+			<input type="submit" value="Reverse" name="rvs">
+			<input type="submit" value="Reverse Right" name="Rright"><br>
 			<input type="submit" value="Stop" name="off">
 		</form>
 		

@@ -2,9 +2,12 @@ body{
 }
 
 main {
+	text-align: center; /*liner skrift op centreret, genovervej om en class skal laves per knap for bedre at "lege" med paddding/plads mellem knapper*/
+	line-height: 100px; /*space mellem rækkerne af knapper*/
 }
 
 header {
+	text-align: center;
 }
 
 h1 {
